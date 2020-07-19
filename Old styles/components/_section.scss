@@ -1,0 +1,21 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-title {
+    padding-bottom: 50px;
+    color: $title-text-color;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  &-feature-list {
+    @media screen and (min-width: $mobile) {
+      padding: 60px 0px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      padding: 94px 0px 0px;
+    }
+  }
+}

@@ -3,7 +3,7 @@
 }
 
 .nav-address {
-  @extend %flex-item-centered;
+  //@extend %flex-item-centered;
 
   .logo-header {
     color: black;
@@ -18,7 +18,7 @@
 }
 
 .site-nav {
-  @extend %flex-item-centered;
+  //@extend %flex-item-centered;
   margin-left: 85px;
 
   .item .current::after {
@@ -39,7 +39,7 @@
 
   .item .nav-link {
     position: relative;
-    display: inline-flex;
+    //display: inline-flex;
     padding-top: 32px;
     padding-bottom: 32px;
     color: $title-text-color;
@@ -62,7 +62,7 @@
 }
 
 .address {
-  @extend %flex-item-centered;
+  //@extend %flex-item-centered;
   margin-left: auto;
 
   .item .icon-header {
