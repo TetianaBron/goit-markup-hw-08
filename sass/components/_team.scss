@@ -14,12 +14,16 @@
   .profession {
     text-align: center;
     font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 16px;
   }
 
   .title {
     color: $title-text-color;
     text-align: center;
     font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -48,7 +52,6 @@
 
   .team-image {
     width: 100%;
-    object-fit: contain;
   }
 }
 
