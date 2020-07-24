@@ -294,13 +294,19 @@ h2 {
   }
 }
 
+.team-list > .item .team-image {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .social-network-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 0px;
   margin-top: 16px;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .social-network-list .item + .item {
