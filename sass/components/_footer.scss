@@ -13,8 +13,8 @@
   text-align: center;
 
   .address-footer {
-    padding-top: 20px;
-    padding-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 60px;
     color: rgba(255, 255, 255, 0.6);
     font-style: inherit;
     line-height: 1.71;
@@ -27,7 +27,7 @@
 
 .join-conteiner {
   text-align: center;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   //margin-right: 94px;
 
   .join {
@@ -69,6 +69,7 @@
 }
 
 .subscribe-conteiner {
+  width: 100%;
   text-align: center;
   //padding-top: 12px;
 
