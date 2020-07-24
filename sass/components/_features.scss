@@ -6,10 +6,6 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-
-  @media screen and (min-width: $desktop) {
-    //margin: -30px; ?????
-  }
 }
 
 .feature-list .item {
@@ -45,7 +41,6 @@
   p {
     margin-bottom: 0px;
     line-height: 1.7;
-    //width: 270px;
   }
 
   @media screen and (min-width: $tablet) {

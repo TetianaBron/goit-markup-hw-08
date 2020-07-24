@@ -3,7 +3,7 @@
 }
 
 .team-list {
-  padding-left: 0px;
+  @extend %list;
 
   @media screen and (min-width: $tablet) {
     display: flex;

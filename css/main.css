@@ -1,4 +1,4 @@
-.feature-list {
+.feature-list, .team-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -69,19 +69,19 @@ h2 {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -242,10 +242,6 @@ h2 {
 
 .team-background {
   background-color: #f5f4fa;
-}
-
-.team-list {
-  padding-left: 0px;
 }
 
 @media screen and (min-width: 768px) {
