@@ -1,3 +1,81 @@
 .footer {
   background-color: #2f303a;
 }
+
+.address-phone-join {
+  @extend %flex-item-centered;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-address {
+  text-align: center;
+
+  .address-footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: inherit;
+    line-height: 1.71;
+
+    .physical-address {
+      color: $primary-white-color;
+    }
+  }
+}
+
+.join-conteiner {
+  text-align: center;
+  padding-bottom: 60px;
+  //margin-right: 94px;
+
+  .join {
+    color: $primary-white-color;
+    text-transform: uppercase;
+  }
+
+  .social-network-list-footer {
+    @extend %flex-item-centered;
+    padding-left: 0px;
+    //justify-content: center;
+    //padding-left: 0px;
+    //margin-top: 20px;
+  }
+}
+
+.social-network-list-footer {
+  .item + .item {
+    margin-left: 10px;
+  }
+
+  .background-social-network-footer {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: $primary-white-color;
+    background-color: #44454e;
+    border-radius: 50%;
+    transition: background-color $transition-values;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      outline: none;
+    }
+  }
+}
+
+.subscribe-conteiner {
+  text-align: center;
+  //padding-top: 12px;
+
+  .subscribe {
+    align-items: center;
+    padding-bottom: 20px;
+    color: $primary-white-color;
+    text-transform: uppercase;
+  }
+}
