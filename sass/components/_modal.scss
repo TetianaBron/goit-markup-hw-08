@@ -163,18 +163,13 @@
 .agree {
   font-size: 12px;
   margin-bottom: 30px;
-
-  @media screen and (min-width: 488px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &-label {
-    @media screen and (min-width: 488px) {
-      display: flex;
-      align-items: center;
-    }
+    display: flex;
+    align-items: center;
   }
 
   .checkbox {
