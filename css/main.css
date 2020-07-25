@@ -4,7 +4,7 @@
   list-style: none;
 }
 
-.what-we-do, .social-network-list, .clients-list .item .clients-logos, .address-phone-join, .join-conteiner .social-network-list-footer, .form-subscribe {
+.what-we-do, .social-network-list, .clients-list .item .clients-logos, .address-phone-join-subscribe, .join-conteiner .social-network-list-footer, .form-subscribe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +433,7 @@ h2 {
   background-color: #2f303a;
 }
 
-.address-phone-join {
+.address-phone-join-subscribe {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -442,8 +442,36 @@ h2 {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .address-phone-join-subscribe {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-address-join-conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .logo-address {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-address {
+    text-align: left;
+    margin-right: 69px;
+  }
 }
 
 .logo-address .address-footer {
@@ -451,7 +479,13 @@ h2 {
   margin-bottom: 60px;
   color: rgba(255, 255, 255, 0.6);
   font-style: inherit;
-  line-height: 1.71;
+  line-height: 2;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-address .address-footer {
+    margin-bottom: 0px;
+  }
 }
 
 .logo-address .address-footer .physical-address {
@@ -460,7 +494,21 @@ h2 {
 
 .join-conteiner {
   text-align: center;
-  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .join-conteiner {
+    padding-top: 5px;
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join-conteiner {
+    text-align: left;
+    padding-top: 12px;
+    margin-left: 0px;
+  }
 }
 
 .join-conteiner .join {
@@ -470,6 +518,7 @@ h2 {
 
 .join-conteiner .social-network-list-footer {
   padding-left: 0px;
+  margin-top: 20px;
 }
 
 .social-network-list-footer .item + .item {
@@ -502,7 +551,23 @@ h2 {
 
 .subscribe-conteiner {
   width: 100%;
+  max-width: 450px;
   text-align: center;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-conteiner {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-conteiner {
+    text-align: left;
+    margin-left: 94px;
+    max-width: 570px;
+  }
 }
 
 .subscribe-conteiner .subscribe {
@@ -519,6 +584,15 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-subscribe {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .form-subscribe .button-subscribe {
@@ -560,5 +634,12 @@ h2 {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-subscribe input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

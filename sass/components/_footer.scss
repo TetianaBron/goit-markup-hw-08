@@ -2,22 +2,42 @@
   background-color: #2f303a;
 }
 
-.address-phone-join {
+.address-phone-join-subscribe {
   @extend %flex-item-centered;
   flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+.logo-address-join-conteiner {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .logo-address {
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    margin-right: 69px;
+  }
 
   .address-footer {
     margin-top: 20px;
     margin-bottom: 60px;
     color: rgba(255, 255, 255, 0.6);
     font-style: inherit;
-    line-height: 1.71;
+    line-height: 2;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0px;
+    }
 
     .physical-address {
       color: $primary-white-color;
@@ -27,8 +47,17 @@
 
 .join-conteiner {
   text-align: center;
-  margin-bottom: 60px;
-  //margin-right: 94px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 5px;
+    margin-left: 165px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    padding-top: 12px;
+    margin-left: 0px;
+  }
 
   .join {
     color: $primary-white-color;
@@ -38,9 +67,7 @@
   .social-network-list-footer {
     @extend %flex-item-centered;
     padding-left: 0px;
-    //justify-content: center;
-    //padding-left: 0px;
-    //margin-top: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -70,8 +97,19 @@
 
 .subscribe-conteiner {
   width: 100%;
+  max-width: 450px;
   text-align: center;
-  //padding-top: 12px;
+  margin-top: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    margin-left: 94px;
+    max-width: 570px;
+  }
 
   .subscribe {
     align-items: center;
