@@ -10,6 +10,7 @@
 
   @media screen and (min-width: $desktop) {
     flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -106,6 +107,7 @@
   }
 
   @media screen and (min-width: $desktop) {
+    padding-top: 12px;
     text-align: left;
     margin-left: 94px;
     max-width: 570px;
