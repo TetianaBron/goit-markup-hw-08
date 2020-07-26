@@ -1,7 +1,7 @@
 .backdrop {
   position: fixed;
   transform: scale(1);
-  transition: opacity $transition-values;
+  transition: $transition-values;
   opacity: 1;
   top: 0;
   left: 0;
