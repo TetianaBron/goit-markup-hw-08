@@ -230,6 +230,7 @@ h2 {
 }
 
 .site-nav .item .nav-link {
+  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
