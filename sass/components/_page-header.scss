@@ -21,12 +21,8 @@
   border: none;
   fill: #000000;
 
-  .icon-menu {
-    fill: black;
-
-    &:hover {
-      fill: $accent-color;
-    }
+  &:hover {
+    fill: $accent-color;
   }
 
   .icon-close-menu {
@@ -52,6 +48,7 @@
 }
 
 .menu-container {
+  font-size: 18px;
   &.is-open {
     display: block;
   }
@@ -84,11 +81,6 @@
     //padding-bottom: 8px;
   }
 
-  //.current {
-  //  position: relative;
-  //   color: $accent-color;
-  // }
-
   .item .current::after {
     position: absolute;
 
@@ -117,6 +109,11 @@
       color: $accent-color;
     }
   }
+
+  .item .current {
+    color: $accent-color;
+    padding-bottom: 8px;
+  }
 }
 
 .address {
@@ -124,5 +121,25 @@
 
   .item + .item {
     margin-top: 16px;
+  }
+
+  .item .icon-header {
+    fill: currentColor;
+    margin-right: 10px;
+    transition: fill $transition-values;
+
+    &:hover {
+      fill: $accent-color;
+    }
+  }
+
+  .link {
+    font-style: inherit;
+    transition: color $transition-values;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
