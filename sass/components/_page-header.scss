@@ -15,15 +15,18 @@
 }
 
 .menu-button {
-  background-color: transparent;
+  background-color: $primary-white-color;
   width: 40px;
   height: 40px;
   border: none;
   fill: #000000;
 
-  &:hover {
-    fill: $accent-color;
-    //background: $primary-white-color;
+  .icon-menu {
+    fill: black;
+
+    &:hover {
+      fill: $accent-color;
+    }
   }
 
   .icon-close-menu {
@@ -32,7 +35,11 @@
 
   &.is-open .icon-close-menu {
     display: block;
-    fill: ;
+    fill: black;
+
+    &:hover {
+      fill: $accent-color;
+    }
   }
 
   &.is-open .icon-menu {
