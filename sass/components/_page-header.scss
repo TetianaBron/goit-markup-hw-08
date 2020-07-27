@@ -19,6 +19,12 @@
   width: 40px;
   height: 40px;
   border: none;
+  fill: #000000;
+
+  &:hover {
+    fill: $accent-color;
+    //background: $primary-white-color;
+  }
 
   .icon-close-menu {
     display: none;
@@ -26,6 +32,7 @@
 
   &.is-open .icon-close-menu {
     display: block;
+    fill: ;
   }
 
   &.is-open .icon-menu {
