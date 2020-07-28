@@ -48,9 +48,7 @@
 }
 
 .menu-container {
-  
   @media screen and (max-width: 767px) {
-    font-size: 18px;
     display: none;
     position: absolute;
     top: 101%;
@@ -85,8 +83,11 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-left: 81px;
+
+    .item + .item {
+      margin-left: 50px;
+    }
   }
 
   .item .current::after {
@@ -116,21 +117,50 @@
     &:focus {
       color: $accent-color;
     }
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
   .item .current {
     color: $accent-color;
 
     @media screen and (max-width: 767px) {
-    padding-bottom: 8px;
+      padding-bottom: 8px;
+    }
   }
 }
 
 .address {
-  margin-top: 60px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
 
-  .item + .item {
-    margin-top: 16px;
+    .item + .item {
+      margin-top: 16px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .item + .item {
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    .item + .item {
+      margin-left: 30px;
+    }
   }
 
   .item .icon-header {
