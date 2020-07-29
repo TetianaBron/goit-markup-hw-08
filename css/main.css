@@ -703,20 +703,170 @@ h2 {
   outline: none;
 }
 
+.main-section {
+  margin-top: 93px;
+}
+
+@media screen and (max-width: 1199px) {
+  .main-section {
+    margin-top: 60px;
+  }
+}
+
+.works-list {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  padding-left: 0px;
+}
+
+.works-list .flex-element:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .works-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 15px -15px 45px;
+  }
+  .works-list .flex-element {
+    width: 100%;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works-list {
+    margin: 35px -15px 79px;
+  }
+  .works-list .flex-element {
+    width: 100%;
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+}
+
+.works-list .title-product {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  letter-spacing: 0.06em;
+}
+
+.works-list .title {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  color: #212121;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 2;
+}
+
+.works-list .product {
+  padding-left: 24px;
+  margin-right: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.works-list .flex-element .link {
+  display: block;
+}
+
+.works-list .flex-element:hover, .works-list .flex-element:focus {
+  outline: none;
+  -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay img {
+  width: 100%;
+}
+
+.overlay .works-description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  height: 294px;
+  display: block;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.flex-element .link:hover .overlay .works-description,
+.flex-element .link:focus .overlay .works-description {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  outline: none;
+}
+
 .filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.filters .item + .item {
-  margin-left: 8px;
+@media screen and (max-width: 767px) {
+  .filters {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .filters .item {
+    margin-bottom: 15px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .filters .item + .item {
+    margin-left: 8px;
+  }
 }
 
 .button-filters {
