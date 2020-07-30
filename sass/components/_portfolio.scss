@@ -89,6 +89,7 @@
 
   img {
     width: 100%;
+    height: 100%;
   }
 
   .works-description {
@@ -101,7 +102,7 @@
     padding-right: 24px;
     padding-top: 63px;
     padding-bottom: 63px;
-    height: 294px;
+    height: 100%;
     display: block;
     transform: translateY(100%);
     transition: transform $transition-values;

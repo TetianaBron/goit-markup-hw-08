@@ -50,6 +50,7 @@
 .menu-container {
   @media screen and (max-width: 767px) {
     display: none;
+    z-index: 1;
     position: absolute;
     top: 101%;
     left: 0;
