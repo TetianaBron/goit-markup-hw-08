@@ -100,8 +100,8 @@
     margin-bottom: 0px;
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: 63px;
-    padding-bottom: 63px;
+    padding-top: 77px;
+    padding-bottom: 77px;
     height: 100%;
     display: block;
     transform: translateY(100%);
@@ -111,6 +111,20 @@
     line-height: 1.5;
     background: rgba(33, 150, 243, 0.9);
 
+    @media screen and (max-width: 400px) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 49px;
+      padding-bottom: 49px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 63px;
+      padding-bottom: 63px;
+    }
     .flex-element .link:hover &,
     .flex-element .link:focus & {
       transform: translateY(0);
