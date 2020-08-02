@@ -856,11 +856,6 @@ h2 {
   overflow: hidden;
 }
 
-.overlay img {
-  width: 100%;
-  height: 100%;
-}
-
 .overlay .works-description {
   position: absolute;
   top: 0;
