@@ -1,3 +1,6 @@
 # Web Studio
-Adaptive Landing Page/n
-Technologies are used: html5, scss
+Adaptive Landing Page  
+
+## Technologies are used: 
+* html5; 
+* scss
